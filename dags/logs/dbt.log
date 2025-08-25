@@ -1,0 +1,40 @@
+[0m10:43:53.683616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002788B6050D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002788B605B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002788B604E50>]}
+
+
+============================== 10:43:53.702641 | 3505b687-d2d5-4c53-b700-7c6a26c64c1a ==============================
+[0m10:43:53.702641 [info ] [MainThread]: Running with dbt=1.10.6
+[0m10:43:53.704608 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt init weather_sales_project', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'log_path': 'logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\DELL\\.dbt', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m10:43:53.890908 [debug] [MainThread]: Starter project path: C:\Users\DELL\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\include\starter_project
+[0m10:43:53.996307 [info ] [MainThread]: 
+Your new dbt project "weather_sales_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:43:53.998311 [info ] [MainThread]: Setting up your profile.
+[0m10:44:47.251470 [info ] [MainThread]: Profile weather_sales_project written to C:\Users\DELL\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m10:44:47.254461 [debug] [MainThread]: Command `dbt init` succeeded at 10:44:47.254461 after 53.89 seconds
+[0m10:44:47.259466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278849A0A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002788B5FB910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002788B5FB9D0>]}
+[0m10:44:47.262464 [debug] [MainThread]: Flushing usage events
+[0m10:44:48.188996 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:46:54.073374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A07F852D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A07FEA9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A07FE9E90>]}
+
+
+============================== 10:46:54.080371 | e897b604-7a41-4c99-abc5-cde349d2fc9a ==============================
+[0m10:46:54.080371 [info ] [MainThread]: Running with dbt=1.10.6
+[0m10:46:54.082392 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\DELL\\.dbt', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt init weather_sales_project', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'printer_width': '80', 'log_path': 'logs', 'indirect_selection': 'eager', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m10:46:54.120012 [info ] [MainThread]: A project called weather_sales_project already exists here.
+[0m10:46:54.122013 [debug] [MainThread]: Command `dbt init` succeeded at 10:46:54.122013 after 0.24 seconds
+[0m10:46:54.123012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A07F86350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A00460A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A07F7B590>]}
+[0m10:46:54.124013 [debug] [MainThread]: Flushing usage events
+[0m10:46:54.993905 [debug] [MainThread]: An error was encountered while trying to flush usage events

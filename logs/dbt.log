@@ -1,0 +1,104 @@
+[0m09:45:08.182171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B8C7D9FE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B8C801F050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B8C801BF10>]}
+
+
+============================== 09:45:08.194169 | f42042e0-72ec-4198-8af0-5857dc8a15f4 ==============================
+[0m09:45:08.194169 [info ] [MainThread]: Running with dbt=1.10.6
+[0m09:45:08.196171 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt init weather_sales_project', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'empty': 'None', 'quiet': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\DELL\\weather_sales', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m09:45:08.386112 [debug] [MainThread]: Starter project path: C:\Users\DELL\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\include\starter_project
+[0m09:45:08.598698 [info ] [MainThread]: 
+Your new dbt project "weather_sales_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:45:08.603692 [info ] [MainThread]: Setting up your profile.
+[0m09:48:22.406321 [info ] [MainThread]: Profile weather_sales_project written to C:\Users\DELL\weather_sales\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m09:48:22.410326 [debug] [MainThread]: Command `dbt init` succeeded at 09:48:22.409366 after 194.40 seconds
+[0m09:48:22.412325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B8C8025750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B8C7D8FC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B8C1490A50>]}
+[0m09:48:22.413362 [debug] [MainThread]: Flushing usage events
+[0m09:48:23.500846 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:50:14.855316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCA804E190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCAB558210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCAC807BD0>]}
+
+
+============================== 09:50:14.861316 | 481e7d3b-ce58-47c2-bb05-64da6cfb929d ==============================
+[0m09:50:14.861316 [info ] [MainThread]: Running with dbt=1.10.6
+[0m09:50:14.863316 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'use_experimental_parser': 'False', 'printer_width': '80', 'log_path': 'logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\DELL\\weather_sales', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m09:50:14.914926 [info ] [MainThread]: dbt version: 1.10.6
+[0m09:50:14.915931 [info ] [MainThread]: python version: 3.11.4
+[0m09:50:14.916929 [info ] [MainThread]: python path: C:\Users\DELL\AppData\Local\Programs\Python\Python311\python.exe
+[0m09:50:14.917931 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m09:50:15.026187 [info ] [MainThread]: Using profiles dir at C:\Users\DELL\weather_sales
+[0m09:50:15.027186 [info ] [MainThread]: Using profiles.yml file at C:\Users\DELL\weather_sales\profiles.yml
+[0m09:50:15.028191 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\DELL\weather_sales\dbt_project.yml
+[0m09:50:15.031190 [info ] [MainThread]: adapter type: postgres
+[0m09:50:15.032189 [info ] [MainThread]: adapter version: 1.9.0
+[0m09:50:15.033190 [info ] [MainThread]: Configuration:
+[0m09:50:15.035189 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:50:15.036191 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:50:15.038190 [info ] [MainThread]: Required dependencies:
+[0m09:50:15.039191 [debug] [MainThread]: Executing "git --help"
+[0m09:50:15.130790 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:50:15.132791 [debug] [MainThread]: STDERR: "b''"
+[0m09:50:15.133789 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:50:15.134790 [info ] [MainThread]: Connection:
+[0m09:50:15.136817 [info ] [MainThread]:   host: postgres
+[0m09:50:15.138794 [info ] [MainThread]:   port: 5432
+[0m09:50:15.140793 [info ] [MainThread]:   user: postgres
+[0m09:50:15.142793 [info ] [MainThread]:   database: weather_sales 
+[0m09:50:15.144793 [info ] [MainThread]:   schema: public 
+[0m09:50:15.146791 [info ] [MainThread]:   connect_timeout: 10
+[0m09:50:15.147792 [info ] [MainThread]:   role: None
+[0m09:50:15.149798 [info ] [MainThread]:   search_path: None
+[0m09:50:15.152811 [info ] [MainThread]:   keepalives_idle: 0
+[0m09:50:15.154794 [info ] [MainThread]:   sslmode: None
+[0m09:50:15.155793 [info ] [MainThread]:   sslcert: None
+[0m09:50:15.157793 [info ] [MainThread]:   sslkey: None
+[0m09:50:15.158790 [info ] [MainThread]:   sslrootcert: None
+[0m09:50:15.160792 [info ] [MainThread]:   application_name: dbt
+[0m09:50:15.164794 [info ] [MainThread]:   retries: 1
+[0m09:50:15.165790 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m09:50:15.988573 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m09:50:22.289364 [debug] [MainThread]: Using postgres connection "debug"
+[0m09:50:22.290362 [debug] [MainThread]: On debug: select 1 as id
+[0m09:50:22.291362 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:50:24.585148 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+could not translate host name "postgres" to address: No such host is known. 
+
+[0m09:50:26.879325 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m09:50:26.881326 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m09:50:26.882326 [debug] [MainThread]: On debug: No close available on handle
+[0m09:50:26.883325 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m09:50:26.885329 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m09:50:26.889329 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\DELL\weather_sales\dbt_project.yml> not found
+
+[0m09:50:26.891330 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  could not translate host name "postgres" to address: No such host is known. 
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m09:50:26.898326 [debug] [MainThread]: Command `dbt debug` failed at 09:50:26.897332 after 12.20 seconds
+[0m09:50:26.899343 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m09:50:26.901329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCACAF0350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCAB558150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCAB558210>]}
+[0m09:50:26.902332 [debug] [MainThread]: Flushing usage events
+[0m09:50:27.723689 [debug] [MainThread]: An error was encountered while trying to flush usage events
