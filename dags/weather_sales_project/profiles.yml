@@ -8,5 +8,5 @@ weather_sales_project:
       port: 5432
       user: postgres
       pass: postgres
-      dbname: weather_sales
+      dbname: postgres
       schema: public

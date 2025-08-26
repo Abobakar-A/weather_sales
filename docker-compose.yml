@@ -1,0 +1,30 @@
+services:
+  astro-scheduler:
+    build:
+      context: .
+    environment:
+      - PYTHONWARNINGS=ignore
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=weather_sales
+      - POSTGRES_HOST=postgres
+    
+  astro-worker:
+    build:
+      context: .
+    environment:
+      - PYTHONWARNINGS=ignore
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=weather_sales
+      - POSTGRES_HOST=postgres
+  
+  astro-webserver:
+    build:
+      context: .
+    environment:
+      - PYTHONWARNINGS=ignore
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=weather_sales
+      - POSTGRES_HOST=postgres

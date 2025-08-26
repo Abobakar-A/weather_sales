@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: weather_sales_project
-    database: weather_sales
+    database: postgres 
     schema: public
     tables:
       - name: sales

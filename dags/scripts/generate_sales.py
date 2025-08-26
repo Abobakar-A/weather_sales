@@ -3,22 +3,14 @@
 import random
 import psycopg2
 from datetime import date
-# Removed: from dotenv import load_dotenv
 import os
-
-# Import Airflow's Connection model
 from airflow.models.connection import Connection
 
-
 def main():
-    """
-    Main function to orchestrate the generation and insertion of sales data.
-    """
     print("Starting to generate sales data based on weather...")
 
     conn = None
     try:
-        # Get database connection details from Airflow
         airflow_conn = Connection.get_connection_from_secrets('postgres_default')
         conn = psycopg2.connect(
             host=airflow_conn.host,
@@ -75,6 +67,3 @@ def main():
     finally:
         if conn:
             conn.close()
-
-if __name__ == "__main__":
-    main()

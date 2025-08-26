@@ -4,21 +4,12 @@ import requests
 import psycopg2
 from datetime import datetime
 import os
-# Removed: from dotenv import load_dotenv
-
-# Import Airflow's Connection and Variable models
 from airflow.models.connection import Connection
 from airflow.models import Variable
 
-
 def main():
-    """
-    This function contains the logic to fetch weather data and insert it into the database.
-    It now uses Airflow Connections and Variables.
-    """
     print("Starting to fetch weather data using Airflow Connections and Variables...")
 
-    # Get API key from Airflow Variable
     try:
         api_key = Variable.get("OPENWEATHER_API_KEY")
     except KeyError:
@@ -27,7 +18,6 @@ def main():
 
     conn = None
     try:
-        # Get database connection details from Airflow
         airflow_conn = Connection.get_connection_from_secrets('postgres_default')
         conn = psycopg2.connect(
             host=airflow_conn.host,
@@ -49,7 +39,6 @@ def main():
 
         for city in CITIES:
             url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
-
             try:
                 response = requests.get(url)
                 response.raise_for_status()
@@ -91,6 +80,3 @@ def main():
             conn.close()
     
     print("✅ Successfully fetched weather data.")
-
-if __name__ == "__main__":
-    main()

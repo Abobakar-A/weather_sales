@@ -7,7 +7,6 @@ def main():
     print("Attempting to create tables in the 'airflow' database...")
     conn = None
     try:
-        # Get connection details from Airflow
         airflow_conn = Connection.get_connection_from_secrets('postgres_default')
         conn = psycopg2.connect(
             host=airflow_conn.host,
@@ -18,7 +17,6 @@ def main():
         )
         cursor = conn.cursor()
 
-        # Create weather_data table
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS weather_data (
                 id SERIAL PRIMARY KEY,
@@ -32,7 +30,6 @@ def main():
         """)
         print("✅ 'weather_data' table created successfully.")
 
-        # Create sales table
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS sales (
                 id SERIAL PRIMARY KEY,
@@ -50,6 +47,3 @@ def main():
     finally:
         if conn:
             conn.close()
-
-if __name__ == "__main__":
-    main()
